@@ -11,9 +11,8 @@ Pod::Spec.new do |s|
   s.resources = 'framework/Resources/*.png'
   s.requires_arc = true
   s.xcconfig = { 'CLANG_MODULES_AUTOLINK' => 'YES' }
-  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
-  s.ios.deployment_target = '5.0'
+  s.ios.deployment_target = '9.0'
   s.ios.exclude_files = 'framework/Source/Mac'
   s.ios.frameworks   = ['OpenGLES', 'CoreMedia', 'QuartzCore', 'AVFoundation']
 
